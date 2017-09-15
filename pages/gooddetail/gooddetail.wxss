@@ -56,7 +56,6 @@
 
 .good-qualified {
   height: 50rpx;
-  border-top: 2rpx solid #eee;
   border-bottom: 2rpx solid #eee;
 }
 
@@ -123,7 +122,7 @@
 }
 
 .api-dialog__container{
-  height: 700rpx;
+  height: 630rpx;
 }
 
 .sub-info {
@@ -205,8 +204,18 @@
 .sub-num{
   display: flex;
   justify-content: space-between;
+  margin: 20rpx 40rpx;
 }
 
 .buy-num{
   font-size: 30rpx;
+}
+
+.surplus-num{
+  color: #999;
+  margin-top: 20rpx;
+}
+
+.quantity-box{
+  margin-top: 20rpx;
 }

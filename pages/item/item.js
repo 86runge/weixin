@@ -1,9 +1,9 @@
-var Zan = require('../../dist/index');
+var Pai = require('../../dist/index');
 
-Page(Object.assign({}, Zan.Quantity, {
+Page(Object.assign({}, Pai.Quantity, {
   data: {
     quantity1: {
-      quantity: 10,
+      quantity: 1,
       min: 1,
       max: 20
     },
@@ -13,13 +13,13 @@ Page(Object.assign({}, Zan.Quantity, {
       max: 1
     },
     quantity3: {
-      quantity: 10,
+      quantity: 1,
       min: 1,
       max: 20
     }
   },
 
-  handleZanQuantityChange(e) {
+  handlePaiQuantityChange(e) {
     var componentId = e.componentId;
     var quantity = e.quantity;
 

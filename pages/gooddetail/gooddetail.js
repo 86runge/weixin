@@ -3,13 +3,18 @@ var app = getApp();
 
 var Pai = require('../../dist/index');
 
-Page(Object.assign({}, Pai.Toast, {
+Page(Object.assign({}, Pai.Toast, Pai.Quantity, {
 
   /**
    * 页面的初始数据
    */
   data: {
-    showDialog: false
+    showDialog: false,
+    quantity: {
+      quantity: 1,
+      min: 1,
+      max: 999
+    }
   },
 
   /**
@@ -82,5 +87,13 @@ Page(Object.assign({}, Pai.Toast, {
       showDialog: !this.data.showDialog
     });
     this.showPaiToast('加入购物车成功');
+  },
+  handlePaiQuantityChange(e) {
+    var componentId = e.componentId;
+    var quantity = e.quantity;
+
+    this.setData({
+      [`${componentId}.quantity`]: quantity
+    });
   }
 }))

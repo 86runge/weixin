@@ -1,28 +1,28 @@
-<template name="zan-quantity">
-  <view class="zan-quantity {{ size === 'small' ? 'zan-quantity--small' : '' }}">
+<template name="pai-quantity">
+  <view class="pai-quantity {{ size === 'small' ? 'pai-quantity--small' : '' }}">
     <view
-      class="zan-quantity__minus {{ quantity <= min ? 'zan-quantity--disabled' : '' }}"
+      class="pai-quantity__minus {{ quantity <= min ? 'pai-quantity--disabled' : '' }}"
       data-component-id="{{ componentId }}"
       data-quantity="{{ quantity }}"
       data-disabled="{{ quantity <= min }}"
-      bindtap="_handleZanQuantityMinus"
+      bindtap="_handlePaiQuantityMinus"
     >-</view>
     <input
-      class="zan-quantity__text {{ min >= max ? 'zan-quantity--disabled' : '' }}"
+      class="pai-quantity__text {{ min >= max ? 'pai-quantity--disabled' : '' }}"
       type="number"
       data-component-id="{{ componentId }}"
       data-min="{{ min }}"
       data-max="{{ max }}"
       value="{{ quantity }}"
       disabled="{{ min >= max }}"
-      bindblur="_handleZanQuantityBlur"
+      bindblur="_handlePaiQuantityBlur"
     ></input>
     <view
-      class="zan-quantity__plus {{ quantity >= max ? 'zan-quantity--disabled' : '' }}"
+      class="pai-quantity__plus {{ quantity >= max ? 'pai-quantity--disabled' : '' }}"
       data-component-id="{{ componentId }}"
       data-quantity="{{ quantity }}"
       data-disabled="{{ quantity >= max }}"
-      bindtap="_handleZanQuantityPlus"
+      bindtap="_handlePaiQuantityPlus"
     >+</view>
   </view>
 </template>

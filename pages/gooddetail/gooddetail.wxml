@@ -1,6 +1,7 @@
 <!--pages/gooddetail/gooddetail.wxml-->
 
 <import src="/dist/toast/toast.wxml" />
+<import src="/dist/quantity/quantity.wxml" />
 
 <template is="pai-toast" data="{{ paiToast }}"></template>
 
@@ -37,8 +38,7 @@
       <view>包邮</view>满69元包邮
       <text></text>
       <text>库存：999</text>
-    </view>
-    <view class='good-weight' bindtap="toggleDialog">选择：净含量</view>
+    </view> 
     <view class='good-qualified'>
       <view>店铺认证</view>
       <view>担保交易</view>
@@ -73,7 +73,7 @@
       <navigator url='../cart/cart' open-type="switchTab">购物车</navigator>
     </view>
     <view class='add-cart' bindtap="toggleDialog">加入购物车</view>
-    <view class='buy-now'>立即购买</view>
+    <view class='buy-now' bindtap="toggleDialog">立即购买</view>
   </view>
 
   <!-- dialog内容 -->
@@ -108,7 +108,9 @@
           <view class='buy-num'>购买数量：</view>
           <view class='surplus-num'>剩余999件</view>
         </view>
-        <view></view>
+        <view class='quantity-box'>
+          <template is="pai-quantity" data="{{ ...quantity, componentId: 'quantity', size: 'small' }}" />
+        </view>
       </view>
       <view class='add-cart-btn' bindtap="addCart">确定</view>
     </view>
