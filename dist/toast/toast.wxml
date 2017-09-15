@@ -1,0 +1,5 @@
+<!--pages/toast/toast.wxml-->
+
+<template name="pai-toast">
+  <view class="pai-toast" wx:if="{{ paiToast.show }}" bindtap="clearPaiToast">{{ paiToast.title }}</view>
+</template>

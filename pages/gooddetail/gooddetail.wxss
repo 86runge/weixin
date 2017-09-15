@@ -1,0 +1,212 @@
+/* pages/gooddetail/gooddetail.wxss */
+
+.swiper-box {
+  width: 100%;
+  height: 400rpx;
+}
+
+.item {
+  width: 100%;
+  height: auto;
+}
+
+.item image {
+  display: block;
+  width: 100%;
+}
+
+.good-info {
+  width: 100%;
+}
+
+.good-info>view {
+  padding: 20rpx 0;
+  margin: 0 40rpx;
+}
+
+.good-title {
+  font-size: 40rpx;
+}
+
+.good-price {
+  font-size: 40rpx;
+  color: #f00;
+}
+
+.good-stock {
+  text-align: right;
+  color: 30rpx;
+  border-top: 2rpx solid #eee;
+  border-bottom: 2rpx solid #eee;
+}
+
+.good-stock view {
+  float: left;
+  padding: 8rpx;
+  background: #f00;
+  border: 2rpx solid #f89;
+  color: #fff;
+  margin-right: 30rpx;
+  margin-top: -12rpx;
+}
+
+.good-stock text {
+  margin-left: 30rpx;
+}
+
+.good-qualified {
+  height: 50rpx;
+  border-top: 2rpx solid #eee;
+  border-bottom: 2rpx solid #eee;
+}
+
+.good-qualified view {
+  float: left;
+  padding: 8rpx;
+  background: #0cc44b;
+  color: #fff;
+  margin-right: 30rpx;
+}
+
+.good-introduce {
+  width: 100%;
+}
+
+.good-introduce .intro-title {
+  font-weight: bold;
+  margin: 40rpx;
+}
+
+.good-introduce .intro-pic {
+  width: 100%;
+}
+
+.intro-pic image {
+  display: block;
+  width: 100%;
+}
+
+.buy-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  border-top: 2rpx solid #eee;
+  display: flex;
+  background: #fff;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.back-home {
+  flex: 1;
+  border-right: 2rpx solid #eee;
+  box-sizing: border-box;
+}
+
+.come-cart {
+  flex: 1;
+}
+
+.add-cart {
+  flex: 2;
+  background: #e9a06b;
+  color: #fff;
+  font-size: 30rpx;
+}
+
+.buy-now {
+  flex: 2;
+  background: #f00;
+  color: #fff;
+  font-size: 30rpx;
+}
+
+.api-dialog__container{
+  height: 700rpx;
+}
+
+.sub-info {
+  display: flex;
+  padding: 20rpx;
+  justify-content: space-between;
+}
+
+.sub-info > view {
+  margin: 10rpx;
+}
+
+.sub-text {
+  width: 450rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.sub-price {
+  margin-top: 20rpx;
+  color: #f00;
+}
+
+.sub-pic {
+  flex: 1;
+}
+
+.sub-pic image {
+  width: 100%;
+}
+
+.sub-detail {
+  flex: 3;
+}
+
+.dialog-close {
+  width: 60rpx;
+  text-align: center;
+}
+
+.add-cart-btn {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  background: #f00;
+  text-align: center;
+  line-height: 100rpx;
+  color: #fff;
+  font-size: 30rpx;
+}
+
+.sub-weight{
+  padding: 20rpx;
+  border-top: 2rpx solid #ccc;
+  border-bottom: 2rpx solid #ccc;
+}
+
+.weight-title{
+  font-size: 30rpx;
+}
+
+.weight-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.weight-item view {
+  padding: 10rpx;
+  margin: 10rpx;
+  border: 2rpx solid #ccc;
+  border-radius: 10rpx;
+}
+
+.sub-num{
+  display: flex;
+  justify-content: space-between;
+}
+
+.buy-num{
+  font-size: 30rpx;
+}

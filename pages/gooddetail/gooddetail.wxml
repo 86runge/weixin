@@ -1,0 +1,117 @@
+<!--pages/gooddetail/gooddetail.wxml-->
+
+<import src="/dist/toast/toast.wxml" />
+
+<template is="pai-toast" data="{{ paiToast }}"></template>
+
+<view class="container">
+
+  <swiper class='swiper-box' indicator-dots='true' autoplay='true' circular='true'>
+    <swiper-item>
+      <view class="item">
+        <image mode='widthFix' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284866182&di=84142c8d32b8638547c94312e69b3e1c&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F88%2F87%2F11i58PICMAT_1024.jpg'></image>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="item">
+        <image mode='widthFix' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284880845&di=c20db4a6692a2bbf79b5ac4339ebfbe2&imgtype=0&src=http%3A%2F%2Fpic.jj20.com%2Fup%2Fallimg%2F911%2F100316140450%2F161003140450-14.jpg'></image>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="item">
+        <image mode='widthFix' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284900049&di=a527c32dd6b7e7599958404cfb10f819&imgtype=0&src=http%3A%2F%2Fpic27.nipic.com%2F20130130%2F11827714_143106559178_2.jpg'></image>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="item">
+        <image mode='widthFix' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284897343&di=61492e7500b19beb473e3f63a6b40f42&imgtype=0&src=http%3A%2F%2Fpic35.photophoto.cn%2F20150613%2F0035035581222830_b.jpg'></image>
+      </view>
+    </swiper-item>
+  </swiper>
+
+  <view class='good-info'>
+    <view class='good-title'>【猕猴桃 夏季尝鲜】东南亚猕猴桃，味道鲜美，吃的人都说好</view>
+    <view class='good-price'>￥15.06</view>
+    <view class='good-stock'>
+      <view>满减</view>
+      <view>包邮</view>满69元包邮
+      <text></text>
+      <text>库存：999</text>
+    </view>
+    <view class='good-weight' bindtap="toggleDialog">选择：净含量</view>
+    <view class='good-qualified'>
+      <view>店铺认证</view>
+      <view>担保交易</view>
+      <view>线下门店</view>
+    </view>
+  </view>
+
+  <view class='good-introduce'>
+    <view class='intro-title'>产品描述</view>
+    <view class='intro-pic'>
+      <image mode='widthFix' src='https://img.alicdn.com/imgextra/i3/2506565374/TB2kv1ztmXlpuFjy0FeXXcJbFXa_!!2506565374.jpg'></image>
+      <image mode='widthFix' src='https://img.alicdn.com/imgextra/i4/2506565374/TB2IzsXbpT.F1JjSZFEXXc1TVXa_!!2506565374.jpg'></image>
+      <image mode='widthFix' src='https://img.alicdn.com/imgextra/i3/2506565374/TB2Tb7bbrL9F1JjSZFwXXcSuVXa_!!2506565374.jpg'></image>
+      <image mode='widthFix' src='https://img.alicdn.com/imgextra/i1/2506565374/TB2LM6.brL9F1JjSZJiXXcDGpXa_!!2506565374.jpg'></image>
+      <image mode='widthFix' src='https://img.alicdn.com/imgextra/i1/2506565374/TB2dF_NbwAEF1JjSZFLXXbzNXXa_!!2506565374.jpg'></image>
+      <image mode='widthFix' src='https://img.alicdn.com/imgextra/i1/2506565374/TB2kFj_bxr9F1JjSZPfXXawbFXa_!!2506565374.jpg'></image>
+      <image mode='widthFix' src='https://img.alicdn.com/imgextra/i1/2506565374/TB2exnta3oQMeJjy0FpXXcTxpXa_!!2506565374.jpg'></image>
+      <image mode='widthFix' src='https://img.alicdn.com/imgextra/i4/2506565374/TB26ZPmatmgF1Jjy0FaXXX5jpXa_!!2506565374.jpg'></image>
+      <image mode='widthFix' src='https://img.alicdn.com/imgextra/i3/2506565374/TB2XZ9VaBP8F1Jjy1zjXXa1WVXa_!!2506565374.jpg'></image>
+      <image mode='widthFix' src='https://img.alicdn.com/imgextra/i4/2506565374/TB2Wlwebp6.F1JjSZFpXXcZjXXa_!!2506565374.jpg'></image>
+      <image mode='widthFix' src='https://img.alicdn.com/imgextra/i4/2506565374/TB2QgIebC69F1JjSZFOXXXK.VXa_!!2506565374.jpg'></image>
+      <image mode='widthFix' src='https://img.alicdn.com/imgextra/i3/2506565374/TB2.v_FXOrEK1JjSZFHXXcveXXa_!!2506565374.jpg'></image>
+      <image mode='widthFix' src='https://img.alicdn.com/imgextra/i1/2506565374/TB2xkQMwY4npuFjSZFmXXXl4FXa_!!2506565374.jpg'></image>
+    </view>
+  </view>
+
+  <view class='buy-bar'>
+    <view class='back-home'>
+      <navigator url='../index/index' open-type="switchTab">首页</navigator>
+    </view>
+    <view class='come-cart'>
+      <navigator url='../cart/cart' open-type="switchTab">购物车</navigator>
+    </view>
+    <view class='add-cart' bindtap="toggleDialog">加入购物车</view>
+    <view class='buy-now'>立即购买</view>
+  </view>
+
+  <!-- dialog内容 -->
+  <view class="api-dialog {{ showDialog ? 'api-dialog--show' : '' }}">
+    <view class="api-dialog__mask" bindtap="toggleDialog" />
+    <view class="api-dialog__container">
+      <view class='sub-info'>
+        <view class='sub-pic'>
+          <image mode='widthFix' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284880845&di=c20db4a6692a2bbf79b5ac4339ebfbe2&imgtype=0&src=http%3A%2F%2Fpic.jj20.com%2Fup%2Fallimg%2F911%2F100316140450%2F161003140450-14.jpg'></image>
+        </view>
+        <view class='sub-detail'>
+          <view class='sub-text'>【猕猴桃 夏季尝鲜】东南亚猕猴桃，味道鲜美，吃的人都说好</view>
+          <view class='sub-price'>￥15.20 - ￥58.60</view>
+        </view>
+        <view class='dialog-close' bindtap="closeDialog">关闭</view>
+      </view>
+      <view class='sub-weight'>
+        <view class='weight-title'>净含量：</view>
+        <view class='weight-item'>
+          <view>苹果 520g</view>
+          <view>葡萄 320g</view>
+          <view>哈密瓜 1350g</view>
+          <view>蓝莓 152g</view>
+          <view>苹果 520g</view>
+          <view>葡萄 320g</view>
+          <view>哈密瓜 1350g</view>
+          <view>蓝莓 152g</view>
+        </view>
+      </view>
+      <view class='sub-num'>
+        <view>
+          <view class='buy-num'>购买数量：</view>
+          <view class='surplus-num'>剩余999件</view>
+        </view>
+        <view></view>
+      </view>
+      <view class='add-cart-btn' bindtap="addCart">确定</view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,288 @@
+<!--index.wxml-->
+
+<view class="container">
+
+  <view class='container-top'>
+    <view class="search-box">
+      <icon type="search" class='icon-search' size="" color="#fff" />
+      <input type='text' class="search-ipt" placeholder-class="phcolor" placeholder='搜索'></input>
+      <view class='line-white'></view>
+    </view>
+  </view>
+
+  <swiper class='swiper-box' indicator-dots='true' autoplay='true' circular='true'>
+    <swiper-item>
+      <view class="item">
+        <navigator url=''>
+          <image mode='widthFix' src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2613106559,1305955192&fm=27&gp=0.jpg'></image>
+        </navigator>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="item">
+        <image mode='widthFix' src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2555755433,2115085325&fm=27&gp=0.jpg'></image>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="item">
+        <image mode='widthFix' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505194117926&di=533739005a0480aa41200e0fd5298882&imgtype=0&src=http%3A%2F%2Fc.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F29381f30e924b899635a000168061d950a7bf6a1.jpg'></image>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="item">
+        <image mode='widthFix' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505194160725&di=8cbf66e4b7e161868177b308c67415ba&imgtype=0&src=http%3A%2F%2Fimg.ivsky.com%2Fimg%2Fbizhi%2Fpre%2F201507%2F29%2Fsaber-002.jpg'></image>
+      </view>
+    </swiper-item>
+  </swiper>
+
+  <view class='saller-link'>
+    <view class='saller-box'>
+      <navigator url='../saller/saller?title=taobao'>
+        <image src='https://i3.sinaimg.cn/gm/2014/0827/U10753P115DT20140827150646.png'></image>
+        淘宝
+      </navigator>
+      <navigator url='../saller/saller?title=tianmao'>
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505194535242&di=ad889659a2633ade7556aa6ec5d54a29&imgtype=0&src=http%3A%2F%2Fis5.mzstatic.com%2Fimage%2Fthumb%2FPurple3%2Fv4%2F79%2Fa1%2F00%2F79a10060-9f3c-24ef-e240-56bd2f94323d%2Fmzl.tmimsobs.png%2F0x0ss-85.jpg'></image>
+        天猫
+      </navigator>
+      <navigator url='../saller/saller?title=jindong'>
+        <image src='https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=47539879,1216349844&fm=27&gp=0.jpg'></image>
+        京东
+      </navigator>
+      <navigator url='../saller/saller?title=guomei'>
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505194608252&di=cbfa27e9594d8355a0c7931758aaa567&imgtype=0&src=http%3A%2F%2Fwww.ncss.org.cn%2Fbest%2Flogo%2F18680792211.jpg'></image>
+        国美
+      </navigator>
+    </view>
+    <view class='saller-box'>
+      <navigator url='../saller/saller?title=suning'>
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505194636059&di=0a25e78e9dd8ddf3e97df9ef84ced2e3&imgtype=0&src=http%3A%2F%2Fwd.suning.cn%2Fweidian%2F2938%2F46%2Fheadmiddle.jpg%3Fversion%3D1470982661341'></image>
+        苏宁
+      </navigator>
+      <navigator url='../saller/saller?title=yamaxun'>
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505194666689&di=1a92c993baa5df3f9ec49e1a3fb36007&imgtype=0&src=http%3A%2F%2Fwww.kongbao988.com%2Fuploads%2Fallimg%2F160217%2F1-16021G3501EJ.png'></image>
+        亚马逊
+      </navigator>
+      <navigator url='../saller/saller?title=meituan'>
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505194739879&di=5f7bd0798d3105f60f39249c8c13c4d8&imgtype=0&src=http%3A%2F%2Fsrc.onlinedown.net%2Fsupply%2Fsup_logo%2Flogo-1122%2F58982_g.jpg'></image>
+        美团
+      </navigator>
+      <navigator url='../saller/saller?title=dazhong'>
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505194773169&di=32dd85fd746fad60ea3c7b5f08599376&imgtype=0&src=http%3A%2F%2Fp.jobui.com%2Fc%2Ft9Gz2NppcaXNXp8Jy1h0Xw%3D%3D.png'></image>
+        大众点评
+      </navigator>
+    </view>
+  </view>
+
+  <view class='head-new'>
+    <view class='new-img'>
+      <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505196384615&di=f3d53cab94a146889bd0b791727b88a1&imgtype=0&src=http%3A%2F%2F0.pic.pc6.com%2Fthumb%2Fup%2F2016-4%2F2016421155342_160_160.jpg'></image>
+    </view>
+    <view class='new-text'>
+      <swiper class='new-text-one' autoplay='true' circular='true' vertical='true'>
+        <swiper-item>
+          <navigator class='new-item' url='../saller/saller?title=热文'>热文</navigator>
+          <navigator class='new-title' url='../saller/saller?title=洗头'>
+            <text>降低颜值的3个洗头习惯，第2个你经常做降低颜值的3个洗头习惯，第2个你经常做</text>
+          </navigator>
+        </swiper-item>
+        <swiper-item>
+          <navigator class='new-item' url='../saller/saller?title=热文'>热文</navigator>
+          <navigator class='new-title' url='../saller/saller?title=洗头'>
+            <text>rwqerewrqwerwqerwqerwqerwqrwerrerqwerew</text>
+          </navigator>
+        </swiper-item>
+      </swiper>
+      <swiper class='new-text-two' autoplay='true' circular='true' vertical='true'>
+        <swiper-item>
+          <navigator class='new-item' url='../saller/saller?title=围观'>围观</navigator>
+          <navigator class='new-title' url='../saller/saller?title=大腿'>
+            <text>竹竿腿和粗大腿男生的区别，扎心了</text>
+          </navigator>
+        </swiper-item>
+        <swiper-item>
+          <navigator class='new-item' url='../saller/saller?title=围观'>围观</navigator>
+          <navigator class='new-title' url='../saller/saller?title=大腿'>
+            <text>werqwrwqerwqerwqer</text>
+          </navigator>
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+
+  <view class='good-classfly'>
+    <view class='selected-goods'>
+      <view class='good-title'>类目1</view>
+      <view class='good-box'>
+        <view class='good-detail'>
+          <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284866182&di=84142c8d32b8638547c94312e69b3e1c&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F88%2F87%2F11i58PICMAT_1024.jpg'></image>
+            <view class='unit-price'>￥24.50</view>
+          </navigator>
+        </view>
+        <view class='good-detail'>
+          <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284880845&di=c20db4a6692a2bbf79b5ac4339ebfbe2&imgtype=0&src=http%3A%2F%2Fpic.jj20.com%2Fup%2Fallimg%2F911%2F100316140450%2F161003140450-14.jpg'></image>
+            <view class='unit-price'>￥24.50</view>
+          </navigator>
+        </view>
+        <view class='good-detail'>
+          <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284900049&di=a527c32dd6b7e7599958404cfb10f819&imgtype=0&src=http%3A%2F%2Fpic27.nipic.com%2F20130130%2F11827714_143106559178_2.jpg'></image>
+            <view class='unit-price'>￥24.50</view>
+          </navigator>
+        </view>
+      </view>
+      <view class='good-box'>
+        <view class='good-detail'>
+          <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284897343&di=61492e7500b19beb473e3f63a6b40f42&imgtype=0&src=http%3A%2F%2Fpic35.photophoto.cn%2F20150613%2F0035035581222830_b.jpg'></image>
+            <view class='unit-price'>￥24.50</view>
+          </navigator>
+        </view>
+        <view class='good-detail'>
+          <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284889778&di=1aae438cb7d6153d2e21a796a016d6a0&imgtype=0&src=http%3A%2F%2Fimg05.tooopen.com%2Fimages%2F20141127%2Fsy_75918321115.jpg'></image>
+            <view class='unit-price'>￥24.50</view>
+          </navigator>
+        </view>
+        <view class='good-detail'>
+          <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505285018925&di=80d7da5b925cb6ac0cc087ea5326c1f1&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F88%2F79%2F84v58PIC7Yg_1024.jpg'></image>
+            <view class='unit-price'>￥24.50</view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+    <view class='fashion-goods'>
+      <view class='good-title'>类目2</view>
+      <view class='good-box'>
+        <view class='good-detail'>
+          <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284866182&di=84142c8d32b8638547c94312e69b3e1c&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F88%2F87%2F11i58PICMAT_1024.jpg'></image>
+            <view class='unit-price'>￥24.50</view>
+          </navigator>
+        </view>
+        <view class='good-detail'>
+          <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284880845&di=c20db4a6692a2bbf79b5ac4339ebfbe2&imgtype=0&src=http%3A%2F%2Fpic.jj20.com%2Fup%2Fallimg%2F911%2F100316140450%2F161003140450-14.jpg'></image>
+            <view class='unit-price'>￥24.50</view>
+          </navigator>
+        </view>
+        <view class='good-detail'>
+          <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284900049&di=a527c32dd6b7e7599958404cfb10f819&imgtype=0&src=http%3A%2F%2Fpic27.nipic.com%2F20130130%2F11827714_143106559178_2.jpg'></image>
+            <view class='unit-price'>￥24.50</view>
+          </navigator>
+        </view>
+      </view>
+      <view class='good-box'>
+        <view class='good-detail'>
+          <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284897343&di=61492e7500b19beb473e3f63a6b40f42&imgtype=0&src=http%3A%2F%2Fpic35.photophoto.cn%2F20150613%2F0035035581222830_b.jpg'></image>
+            <view class='unit-price'>￥24.50</view>
+          </navigator>
+        </view>
+        <view class='good-detail'>
+          <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284889778&di=1aae438cb7d6153d2e21a796a016d6a0&imgtype=0&src=http%3A%2F%2Fimg05.tooopen.com%2Fimages%2F20141127%2Fsy_75918321115.jpg'></image>
+            <view class='unit-price'>￥24.50</view>
+          </navigator>
+        </view>
+        <view class='good-detail'>
+          <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505285018925&di=80d7da5b925cb6ac0cc087ea5326c1f1&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F88%2F79%2F84v58PIC7Yg_1024.jpg'></image>
+            <view class='unit-price'>￥24.50</view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+    <view class='global-goods'>
+      <view class='good-title'>类目3</view>
+      <view class='good-box'>
+        <view class='good-detail'>
+          <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284866182&di=84142c8d32b8638547c94312e69b3e1c&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F88%2F87%2F11i58PICMAT_1024.jpg'></image>
+            <view class='unit-price'>￥24.50</view>
+          </navigator>
+        </view>
+        <view class='good-detail'>
+          <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284880845&di=c20db4a6692a2bbf79b5ac4339ebfbe2&imgtype=0&src=http%3A%2F%2Fpic.jj20.com%2Fup%2Fallimg%2F911%2F100316140450%2F161003140450-14.jpg'></image>
+            <view class='unit-price'>￥24.50</view>
+          </navigator>
+        </view>
+        <view class='good-detail'>
+          <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284900049&di=a527c32dd6b7e7599958404cfb10f819&imgtype=0&src=http%3A%2F%2Fpic27.nipic.com%2F20130130%2F11827714_143106559178_2.jpg'></image>
+            <view class='unit-price'>￥24.50</view>
+          </navigator>
+        </view>
+      </view>
+      <view class='good-box'>
+        <view class='good-detail'>
+          <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284897343&di=61492e7500b19beb473e3f63a6b40f42&imgtype=0&src=http%3A%2F%2Fpic35.photophoto.cn%2F20150613%2F0035035581222830_b.jpg'></image>
+            <view class='unit-price'>￥24.50</view>
+          </navigator>
+        </view>
+        <view class='good-detail'>
+          <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284889778&di=1aae438cb7d6153d2e21a796a016d6a0&imgtype=0&src=http%3A%2F%2Fimg05.tooopen.com%2Fimages%2F20141127%2Fsy_75918321115.jpg'></image>
+            <view class='unit-price'>￥24.50</view>
+          </navigator>
+        </view>
+        <view class='good-detail'>
+          <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505285018925&di=80d7da5b925cb6ac0cc087ea5326c1f1&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F88%2F79%2F84v58PIC7Yg_1024.jpg'></image>
+            <view class='unit-price'>￥24.50</view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+    <view class='trend-goods'>
+      <view class='good-title'>类目4</view>
+      <view class='good-box'>
+        <view class='good-detail'>
+          <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284866182&di=84142c8d32b8638547c94312e69b3e1c&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F88%2F87%2F11i58PICMAT_1024.jpg'></image>
+            <view class='unit-price'>￥24.50</view>
+          </navigator>
+        </view>
+        <view class='good-detail'>
+          <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284880845&di=c20db4a6692a2bbf79b5ac4339ebfbe2&imgtype=0&src=http%3A%2F%2Fpic.jj20.com%2Fup%2Fallimg%2F911%2F100316140450%2F161003140450-14.jpg'></image>
+            <view class='unit-price'>￥24.50</view>
+          </navigator>
+        </view>
+        <view class='good-detail'>
+          <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284900049&di=a527c32dd6b7e7599958404cfb10f819&imgtype=0&src=http%3A%2F%2Fpic27.nipic.com%2F20130130%2F11827714_143106559178_2.jpg'></image>
+            <view class='unit-price'>￥24.50</view>
+          </navigator>
+        </view>
+      </view>
+      <view class='good-box'>
+        <view class='good-detail'>
+          <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284897343&di=61492e7500b19beb473e3f63a6b40f42&imgtype=0&src=http%3A%2F%2Fpic35.photophoto.cn%2F20150613%2F0035035581222830_b.jpg'></image>
+            <view class='unit-price'>￥24.50</view>
+          </navigator>
+        </view>
+        <view class='good-detail'>
+          <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284889778&di=1aae438cb7d6153d2e21a796a016d6a0&imgtype=0&src=http%3A%2F%2Fimg05.tooopen.com%2Fimages%2F20141127%2Fsy_75918321115.jpg'></image>
+            <view class='unit-price'>￥24.50</view>
+          </navigator>
+        </view>
+        <view class='good-detail'>
+          <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505285018925&di=80d7da5b925cb6ac0cc087ea5326c1f1&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F88%2F79%2F84v58PIC7Yg_1024.jpg'></image>
+            <view class='unit-price'>￥24.50</view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

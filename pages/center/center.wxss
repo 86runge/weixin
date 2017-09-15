@@ -1,0 +1,70 @@
+/* pages/center/center.wxss */
+
+.info-box {
+  width: 100%;
+  height: 400rpx;
+  background: #f9f9f9;
+  border-bottom: 2rpx solid #eee;
+}
+
+.info-box image {
+  width: 200rpx;
+  height: 200rpx;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100rpx;
+  border-radius: 50%;
+}
+
+.my-order {
+  width: 100%;
+  height: 240rpx;
+  margin-top: 40rpx;
+  background: #f9f9f9;
+  border-top: 2rpx solid #eee;
+}
+
+.order-title {
+  height: 80rpx;
+  margin: 0 40rpx;
+  line-height: 80rpx;
+  border-bottom: 2rpx solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-box {
+  height: 160rpx;
+  line-height: 160rpx;
+  border-bottom: 2rpx solid #eee;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cart-box {
+  width: 100%;
+  height: 100rpx;
+  margin-top: 40rpx;
+  background: #f9f9f9;
+  border-top: 2rpx solid #eee;
+  border-bottom: 2rpx solid #eee;
+  line-height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-box view{
+  margin: 0 40rpx;
+}
+
+.cart-num{
+  width: 60rpx;
+  height: 30rpx;
+  border-radius: 10rpx;
+  margin-top: 35rpx;
+  background: #98a1a9;
+  line-height: 30rpx;
+  text-align: center;
+  color: #fff;
+}

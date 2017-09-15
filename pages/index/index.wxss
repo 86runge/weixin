@@ -1,0 +1,164 @@
+/**index.wxss**/
+
+.container-top {
+  width: 100%;
+  height: 100rpx;
+  background: #ff7101;
+}
+
+.search-box {
+  margin: 24rpx 100rpx 0;
+  color: #fff;
+}
+
+.icon-search {
+  float: left;
+  margin-top: 10rpx;
+  margin-right: 10rpx;
+  size: 40rpx;
+}
+
+.search-ipt {
+  font-size: 40rpx;
+}
+
+.phcolor {
+  color: #fff;
+}
+
+.line-white {
+  width: 100%;
+  height: 2rpx;
+  margin-top: 8rpx;
+  background: #fff;
+}
+
+.swiper-box {
+  width: 100%;
+  height: 400rpx;
+}
+
+.item {
+  width: 100%;
+  height: auto;
+}
+
+.item image {
+  display: block;
+  width: 100%;
+}
+
+.saller-link {
+  width: 100%;
+}
+
+.saller-box {
+  width: 80%;
+  height: 160rpx;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.saller-link image {
+  display: block;
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: 5px;
+}
+
+.head-new {
+  width: 100%;
+  height: 160rpx;
+}
+
+.head-new .new-img {
+  width: 160rpx;
+  height: 160rpx;
+  float: left;
+}
+
+.new-img image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 40rpx;
+  margin-top: 30rpx;
+}
+
+.new-text {
+  padding: 20rpx 40rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.new-text swiper {
+  margin-left: 120rpx;
+  height: 60rpx;
+}
+
+.new-text navigator {
+  display: inline-block;
+}
+
+.new-text .new-item {
+  position: absolute;
+}
+
+.new-text .new-title {
+  margin-left: 80rpx;
+}
+
+/* 文本溢出处理 */
+
+.new-title text {
+  width: 450rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.good-classfly, .good-classfly view {
+  width: 100%;
+}
+
+.good-title {
+  background: #f00;
+  color: #fff;
+  text-align: center;
+}
+
+.good-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.good-detail {
+  position: relative;
+  text-align: center;
+}
+
+.good-detail .unit-price {
+  position: absolute;
+  right: 30rpx;
+  bottom: 34rpx;
+  width: 100rpx;
+  height: 30rpx;
+  text-align: center;
+  line-height: 30rpx;
+  background: #999;
+  color: #fff;
+
+}
+
+.good-detail image {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 20rpx 0;
+  border: 2rpx solid #ddd;
+}

@@ -1,0 +1,5 @@
+/* 组件样式 */
+
+@import "toast/toast.wxss";
+@import "dialog/dialog.wxss";
+@import "quantity/quantity.wxss";

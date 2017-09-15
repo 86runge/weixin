@@ -1,0 +1,87 @@
+/* pages/balance/balance.wxss */
+
+.cart-box {
+  margin: 40rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-good-picture {
+  flex: 2;
+}
+
+.cart-good-picture navigator {
+  display: block;
+  width: 100%;
+  border: 2rpx silid #999;
+}
+
+.cart-good-picture image {
+  display: block;
+  width: 100%;
+}
+
+.cart-good-info {
+  height: 150rpx;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-good-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-block{
+  width: 100%;
+  height: 100rpx;
+}
+
+.settlement {
+  position: fixed;
+  bottom: 0;
+  height: 100rpx;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: flex-end;
+  line-height: 100rpx;
+  border-top: 2rpx solid #f00;
+}
+
+.total .sub-total, .total .sub-info {
+  line-height: 40rpx;
+  text-align: right;
+}
+
+.total text{
+  color: #f00;
+}
+
+.sub-total {
+  color: #f00;
+  margin-top: 10rpx;
+}
+
+.sub-info {
+  color: #999;
+  margin-top: -10rpx;
+}
+
+.settlement-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.settlement-btn {
+  width: 200rpx;
+  height: 100%;
+  margin-left: 20rpx;
+  background: #f00;
+  text-align: center;
+  color: #fff;
+  font-size: 30rpx;
+}

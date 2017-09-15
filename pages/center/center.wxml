@@ -1,0 +1,37 @@
+<!--pages/center/center.wxml-->
+
+<view class='container'>
+
+  <view class='info-box'>
+    <image src="{{userInfoAvatar}}" />
+  </view>
+
+  <view class='my-order'>
+    <view class='order-title'>
+      <view>我的订单</view>
+      <navigator url='../myorder/myorder'>
+        <view>查看全部订单</view>
+      </navigator>
+    </view>
+    <view class='order-box'>
+      <navigator url='../myorder/myorder'>
+        <view>待付款</view>
+      </navigator>
+      <navigator url='../myorder/myorder'>
+        <view>待发货</view>
+      </navigator>
+      <navigator url='../myorder/myorder'>
+        <view>待收货</view>
+      </navigator>
+      <navigator url='../myorder/myorder'>
+        <view>已完成</view>
+      </navigator>
+    </view>
+  </view>
+
+  <view class='cart-box'>
+    <view>购物车</view>
+    <view class='cart-num'>2</view>
+  </view>
+
+</view>
