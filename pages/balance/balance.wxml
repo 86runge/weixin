@@ -2,7 +2,29 @@
 
 <view class='container'>
 
-  <view class='shipping-address'>新增收货地址</view>
+  <view class='address_box'>
+
+    <!-- 没有收货地址，显示添加收货地址 -->
+    <navigator url='../address/address' hidden='{{!has_address}}'>
+      <view class='add_address' bindtap='addAddress'>你还没有收货地址，请添加收货地址</view>
+    </navigator>
+
+    <!-- 有收货地址 -->
+    <view class='address_info' hidden='{{has_address}}'>
+      <view class='icon icon-location'></view>
+      <view>
+        <view class='people_info'>
+          <text>收货人：{{people_name}}</text>
+          <text>{{people_phone}}</text>
+        </view>
+        <text class='receipt_address'>收货地址:{{people_region}} {{people_address}}</text>
+      </view>
+      <navigator url='../address_list/address_list'>
+        <view class='modify_replace'>修改或更换收货地址</view>
+      </navigator>
+    </view>
+
+  </view>
 
   <view class='cart-box'>
     <view class='cart-good-picture'>
@@ -38,13 +60,13 @@
   <view class='settlement'>
     <view class='settlement-info'>
       <view class='total'>
-        <view>合计：<text>￥432.20</text></view>
+        <view>合计：
+          <text>￥432.20</text>
+        </view>
         <!-- <view class='sub-total'>合计：￥432.20</view>
         <view class='sub-info'>不含运费</view> -->
       </view>
-      <navigator url='../balance/balance'>
-        <view class='settlement-btn'>结算</view>
-      </navigator>
+      <view class='settlement-btn'>结算</view>
     </view>
   </view>
 

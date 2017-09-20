@@ -2,73 +2,73 @@
 
 <view class="container">
 
-  <view class='cart-empty'>
+  <!-- 购物车没有东西 -->
+  <view class='cart-empty' hidden="{{hasList}}">
     <view class='hungry'>购物车快饿瘪了 T.T</view>
     <view class='choose'>快给我挑点宝贝</view>
     <image mode='widthFix' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505307827039&di=ba8df025605cdad43833cac4985c6701&imgtype=0&src=http%3A%2F%2Fimg4q.duitang.com%2Fuploads%2Fitem%2F201309%2F23%2F20130923225547_zVMSU.jpeg'></image>
-    <view class='go-shopping'>去逛逛</view>
+    <view class='go-shopping'>
+      <navigator url='../index/index' open-type="switchTab">去逛逛</navigator>
+    </view>
   </view>
 
-  <view class='cart-existence'>
-
-    <view class='cart-box'>
+  <!-- 购物车没有东西 -->
+  <view class='cart-existence' hidden="{{!hasList}}">
+    <view class='cart-box cart-head'>
       <view class='cart-good-selected'>
-        <checkbox class='check-all' />
+        <view wx:if="{{selectAllStatus}}" class='icon icon-checked' bindtap='selectAll'></view>
+        <view wx:else class='icon icon-check' bindtap='selectAll'></view>
       </view>
       <view class='cart-good-picture'>
-        dianpuming
       </view>
-      <view class=''>
+      <view bindtap='editDelete'>
         编辑
       </view>
     </view>
 
-    <view class='cart-box'>
-      <view class='cart-good-selected'>
-        <checkbox class='check-item' />
-        <!-- <image></image> 用图片来代替样式 -->
-      </view>
-      <view class='cart-good-picture'>
-        <navigator url='../gooddetail/gooddetail?title=mihoutao'>
-          <image mode='widthFix' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284866182&di=84142c8d32b8638547c94312e69b3e1c&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F88%2F87%2F11i58PICMAT_1024.jpg'></image>
-        </navigator>
-      </view>
-      <view class='cart-good-info'>
-        <view class='cart-good-title'>【猕猴桃 夏季尝鲜】东南亚猕猴桃，味道鲜美，吃的人都说好</view>
-        <view class='cart-good-price'>
-          <text>￥24.56</text>
-          <text>X2</text>
+    <block wx:for="{{cart_list}}" wx:key="*this">
+      <view class='cart-box'>
+        <view class='cart-good-selected'>
+          <view wx:if="{{item.selected}}" class='icon icon-checked' bindtap='selectList' data-index='{{index}}'></view>
+          <view wx:else class='icon icon-check' bindtap='selectList' data-index='{{index}}'></view>
         </view>
-      </view>
-    </view>
-    <view class='cart-box'>
-      <view class='cart-good-selected'>
-        <checkbox class='check-item' />
-      </view>
-      <view class='cart-good-picture'>
-        <navigator url='../gooddetail/gooddetail?title=mihoutao'>
-          <image mode='widthFix' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284866182&di=84142c8d32b8638547c94312e69b3e1c&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F88%2F87%2F11i58PICMAT_1024.jpg'></image>
-        </navigator>
-      </view>
-      <view class='cart-good-info'>
-        <view class='cart-good-title'>【猕猴桃 夏季尝鲜】东南亚猕猴桃，味道鲜美，吃的人都说好</view>
-        <view class='cart-good-price'>
-          <text>￥24.56</text>
-          <text>X2</text>
+        <view class='cart-good-picture'>
+          <navigator url='../gooddetail/gooddetail?id={{item.id}}'>
+            <image mode='widthFix' src='{{item.img_src}}'></image>
+          </navigator>
         </view>
+        <view class='cart-good-info '>
+          <view class='cart-good-title'>{{item.good_title}}</view>
+          <view class='cart-good-price'>
+            <text>￥{{item.single_price}}</text>
+            <view class='quanlity' hidden='{{editDelete}}'>
+              <view class="quanlity-minus {{item.num == 1 ? 'quantity-disabled' : ''}}" bindtap="minusCount" data-index="{{index}}">-</view>
+              <input type="number" value='{{item.num}}'></input>
+              <view class="quanlity-plus" bindtap="addCount" data-index="{{index}}">+</view>
+            </view>
+            <view hidden='{{!editDelete}}'>数量：{{item.num}}</view>
+          </view>
+        </view>
+        <view class='delete-good' hidden='{{!editDelete}}' bindtap="deleteList" data-index="{{index}}">删除</view>
       </view>
-    </view>
+    </block>
 
     <view class='cart-block'></view>
 
     <view class='settlement'>
-      <view class='check-all-btn'><checkbox class='check-item' />全选</view>
+      <view class='check-all-btn'>
+        <view wx:if="{{selectAllStatus}}" class='icon icon-checked' bindtap='selectAll'></view>
+        <view wx:else class='icon icon-check' bindtap='selectAll'></view>
+        <text>全选</text>
+      </view>
       <view class='settlement-info'>
         <view class='total'>
-          <view class='sub-total'>合计：￥432.20</view>
+          <view class='sub-total'>合计：￥{{total_price}}</view>
           <view class='sub-info'>不含运费</view>
         </view>
-        <navigator url='../balance/balance'><view class='settlement-btn'>结算</view></navigator>
+        <navigator url='../balance/balance'>
+          <view class='settlement-btn'>提交</view>
+        </navigator>
       </view>
     </view>
 

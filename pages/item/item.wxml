@@ -1,21 +1,17 @@
-
-<import src="/dist/quantity/quantity.wxml" />
-
 <view class="container">
 
-  <view class="doc-title">QUANTITY</view>
+  <view class="doc-title">ICON</view>
 
-  <view style="padding: 40px 15px">
-    <template is="pai-quantity" data="{{ ...quantity1, componentId: 'quantity1' }}" />
+  <view class="panel">
+    <view wx:for="{{ icons }}" wx:for-item="icon" class="icon-wrap">
+      <view class="icon icon-{{ icon }}"  style="font-size: 20px; color: #ff4343;"></view>
+      <view class="icon-classname">icon-{{ icon }}</view>
+    </view>
   </view>
-
-  <!-- 当最大值等于最小值时，组件不可用 -->
-  <view style="padding: 40px 15px ">
-    <template is="pai-quantity" data="{{ ...quantity2, componentId: 'quantity2' }}" />
-  </view>
-
-  <!-- small size -->
-  <view style="padding: 40px 15px ">
-    <template is="pai-quantity" data="{{ ...quantity3, componentId: 'quantity3', size: 'small' }}" />
+  <view class="panel" style="margin-bottom: 40px;">
+    <view wx:for="{{ icons }}" wx:for-item="icon" class="icon-wrap">
+      <view class="icon icon-{{ icon }}" style="font-size: 40px;"></view>
+      <view class="icon-classname">icon-{{ icon }}</view>
+    </view>
   </view>
 </view>

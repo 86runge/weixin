@@ -3,3 +3,4 @@
 @import "toast/toast.wxss";
 @import "dialog/dialog.wxss";
 @import "quantity/quantity.wxss";
+@import "icon/icon.wxss";

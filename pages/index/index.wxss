@@ -72,12 +72,13 @@
 .head-new {
   width: 100%;
   height: 160rpx;
+  display: flex;
+  justify-content: space-between;
 }
 
 .head-new .new-img {
   width: 160rpx;
   height: 160rpx;
-  float: left;
 }
 
 .new-img image {
@@ -88,14 +89,15 @@
 }
 
 .new-text {
-  padding: 20rpx 40rpx;
-  height: 60rpx;
-  line-height: 60rpx;
+  flex: 1;
+  height: 140rpx;
+  padding-top: 20rpx;
+  box-sizing: content-box;
 }
 
 .new-text swiper {
-  margin-left: 120rpx;
   height: 60rpx;
+  line-height: 60rpx;
 }
 
 .new-text navigator {
@@ -127,38 +129,43 @@
 }
 
 .good-title {
+  height: 50rpx;
+  line-height: 50rpx;
   background: #f00;
   color: #fff;
   text-align: center;
 }
 
-.good-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.good-box::after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
 }
 
-.good-detail {
+.good-box .good-detail {
   position: relative;
+  float: left;
+  width: 250rpx;
   text-align: center;
+  margin: 40rpx 0;
 }
 
 .good-detail .unit-price {
   position: absolute;
-  right: 30rpx;
-  bottom: 34rpx;
+  left: 110rpx;
+  top: 160rpx;
   width: 100rpx;
   height: 30rpx;
   text-align: center;
   line-height: 30rpx;
   background: #999;
   color: #fff;
-
+  z-index: 10;
 }
 
 .good-detail image {
   width: 200rpx;
   height: 200rpx;
-  margin: 20rpx 0;
   border: 2rpx solid #ddd;
 }

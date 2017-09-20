@@ -9,7 +9,9 @@
     "pages/saller/saller",
     "pages/gooddetail/gooddetail",
     "pages/balance/balance",
-    "pages/myorder/myorder"
+    "pages/myorder/myorder",
+    "pages/address/address",
+    "pages/address_list/address_list"
   ],
   "window": {
     "navigationBarBackgroundColor": "#cf4218",

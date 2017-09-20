@@ -35,10 +35,16 @@
 
 .order-box {
   height: 160rpx;
-  line-height: 160rpx;
+  line-height: 40rpx;
+  text-align: center;
   border-bottom: 2rpx solid #eee;
   display: flex;
   justify-content: space-around;
+}
+
+.order-box .icon {
+  margin-top: 40rpx;
+  font-size: 40rpx;
 }
 
 .cart-box {
@@ -54,11 +60,11 @@
   align-items: center;
 }
 
-.cart-box view{
+.cart-box view {
   margin: 0 40rpx;
 }
 
-.cart-num{
+.cart-num {
   width: 60rpx;
   height: 30rpx;
   border-radius: 10rpx;

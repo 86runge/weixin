@@ -14,7 +14,17 @@ Page(Object.assign({}, Pai.Toast, Pai.Quantity, {
       quantity: 1,
       min: 1,
       max: 999
-    }
+    },
+    spec_list: [
+      { spec: '葡萄 250g', price: 5.30 },
+      { spec: '栗子 250g', price: 15.30 },
+      { spec: '苹果 550g', price: 25.30 },
+      { spec: '猕猴桃 250g', price: 5.30 },
+      { spec: '蓝莓 250g', price: 14.30 },
+      { spec: '桃子 450g', price: 5.30 },
+      { spec: '香蕉 250g', price: 9.30 },
+      { spec: '橘子 350g', price: 4.30 }
+    ]
   },
 
   /**
@@ -77,7 +87,7 @@ Page(Object.assign({}, Pai.Toast, Pai.Quantity, {
       showDialog: !this.data.showDialog
     });
   },
-  closeDialog(){
+  closeDialog() {
     this.setData({
       showDialog: !this.data.showDialog
     });

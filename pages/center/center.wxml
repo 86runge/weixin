@@ -15,23 +15,31 @@
     </view>
     <view class='order-box'>
       <navigator url='../myorder/myorder'>
+        <view class='icon icon-topay'></view>
         <view>待付款</view>
       </navigator>
       <navigator url='../myorder/myorder'>
+        <view class='icon icon-gift'></view>
         <view>待发货</view>
       </navigator>
       <navigator url='../myorder/myorder'>
+        <view class='icon icon-send'></view>
         <view>待收货</view>
       </navigator>
       <navigator url='../myorder/myorder'>
+        <view class='icon icon-sign'></view>
         <view>已完成</view>
       </navigator>
     </view>
   </view>
 
   <view class='cart-box'>
-    <view>购物车</view>
-    <view class='cart-num'>2</view>
+    <navigator url='../cart/cart' open-type="switchTab">
+      <view>购物车</view>
+    </navigator>
+    <navigator url='../cart/cart' open-type="switchTab">
+      <view class='cart-num'>2</view>
+    </navigator>
   </view>
 
 </view>

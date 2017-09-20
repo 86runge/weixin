@@ -1,34 +1,33 @@
 .pai-quantity {
   color: #666;
+  border: 2rpx solid #999;
 }
 .pai-quantity view {
   display: inline-block;
-  line-height: 20px;
-  padding: 5px 0;
+  line-height: 40rpx;
+  padding: 10rpx 0;
   text-align: center;
-  min-width: 40px;
+  min-width: 80rpx;
   box-sizing: border-box;
   vertical-align: middle;
-  font-size: 12px;
-  border: 1rpx solid #999;
 }
 .pai-quantity .pai-quantity__minus {
   border-right: none;
-  border-radius: 2px 0 0 2px;
+  border-radius: 4rpx 0 0 4rpx;
 }
 .pai-quantity .pai-quantity__text {
-  border: 1rpx solid #999;
+  border-left: 2rpx solid #999;
+  border-right: 2rpx solid #999;
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  height: 30px;
-  width: 40px;
-  font-size: 12px;
-  line-height: 30px;
+  height: 60rpx;
+  width: 80rpx;
+  line-height: 60rpx;
 }
 .pai-quantity .pai-quantity__plus {
   border-left: none;
-  border-radius: 0 2px 2px 0;
+  border-radius: 0 4rpx 4rpx 0;
 }
 .pai-quantity .pai-quantity--disabled {
   background: #f8f8f8;
@@ -36,11 +35,11 @@
   border-color: #e8e8e8;
 }
 .pai-quantity--small view {
-  min-width: 36px;
-  line-height: 18px;
+  min-width: 72rpx;
+  line-height: 36rpx;
 }
 .pai-quantity--small .pai-quantity__text {
-  width: 36px;
-  line-height: 28px;
-  height: 28px;
+  width: 72rpx;
+  line-height: 56rpx;
+  height: 56rpx;
 }
