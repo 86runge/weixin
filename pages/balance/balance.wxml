@@ -26,32 +26,65 @@
 
   </view>
 
-  <view class='cart-box'>
-    <view class='cart-good-picture'>
-      <navigator url='../gooddetail/gooddetail?title=mihoutao'>
-        <image mode='widthFix' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284866182&di=84142c8d32b8638547c94312e69b3e1c&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F88%2F87%2F11i58PICMAT_1024.jpg'></image>
-      </navigator>
+  <view>
+    <view class='order-title'>
+      <text>订单详情</text>
     </view>
-    <view class='cart-good-info'>
-      <view class='cart-good-title'>【猕猴桃 夏季尝鲜】东南亚猕猴桃，味道鲜美，吃的人都说好</view>
-      <view class='cart-good-price'>
-        <text>￥24.56</text>
-        <text>X2</text>
+    <view class='cart-box'>
+      <view class='cart-good-picture'>
+        <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+          <image mode='widthFix' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284866182&di=84142c8d32b8638547c94312e69b3e1c&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F88%2F87%2F11i58PICMAT_1024.jpg'></image>
+        </navigator>
+      </view>
+      <view class='cart-good-info'>
+        <view class='cart-good-title'>【猕猴桃 夏季尝鲜】东南亚猕猴桃，味道鲜美，吃的人都说好</view>
+        <view class='cart-good-price'>
+          <text>￥24.56</text>
+          <text>X2</text>
+        </view>
+      </view>
+    </view>
+    <view class='cart-box'>
+      <view class='cart-good-picture'>
+        <navigator url='../gooddetail/gooddetail?title=mihoutao'>
+          <image mode='widthFix' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284866182&di=84142c8d32b8638547c94312e69b3e1c&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F88%2F87%2F11i58PICMAT_1024.jpg'></image>
+        </navigator>
+      </view>
+      <view class='cart-good-info'>
+        <view class='cart-good-title'>【猕猴桃 夏季尝鲜】东南亚猕猴桃，味道鲜美，吃的人都说好</view>
+        <view class='cart-good-price'>
+          <text>￥24.56</text>
+          <text>X2</text>
+        </view>
       </view>
     </view>
   </view>
-  <view class='cart-box'>
-    <view class='cart-good-picture'>
-      <navigator url='../gooddetail/gooddetail?title=mihoutao'>
-        <image mode='widthFix' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505284866182&di=84142c8d32b8638547c94312e69b3e1c&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F88%2F87%2F11i58PICMAT_1024.jpg'></image>
-      </navigator>
+
+  <view class='shipping'>
+    <view class='order-title'>
+      <text>配送方式</text>
     </view>
-    <view class='cart-good-info'>
-      <view class='cart-good-title'>【猕猴桃 夏季尝鲜】东南亚猕猴桃，味道鲜美，吃的人都说好</view>
-      <view class='cart-good-price'>
-        <text>￥24.56</text>
-        <text>X2</text>
-      </view>
+    <view class='shipping-box'>
+      <text class='order-btn'>支付宝</text><text class='order-btn'>包邮</text>
+    </view>
+  </view>
+
+  <view class='payment'>
+    <view class='order-title'>
+      <text>支付方式</text>
+    </view>
+    <view class='payment-box'>
+      <text class='order-btn'>支付宝</text>
+      <text class='order-btn'>微信支付</text>
+    </view>
+  </view>
+
+  <view class='leave_msg'>
+    <view class='order-title'>
+      <text>备注留言</text>
+    </view>
+    <view class='msg-box'>
+      <textarea placeholder='请在此处填写您的留言'></textarea>
     </view>
   </view>
 
@@ -66,7 +99,7 @@
         <!-- <view class='sub-total'>合计：￥432.20</view>
         <view class='sub-info'>不含运费</view> -->
       </view>
-      <view class='settlement-btn'>结算</view>
+      <view class='settlement-btn'>去支付</view>
     </view>
   </view>
 

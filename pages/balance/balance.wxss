@@ -1,10 +1,14 @@
 /* pages/balance/balance.wxss */
 
+.container {
+  background: #fff;
+}
+
 .address_box {
   width: 100%;
   height: 100rpx;
   text-align: center;
-  border-bottom: 2rpx solid #eee;
+  border-bottom: 2rpx solid #ccc;
 }
 
 .add_address {
@@ -31,16 +35,34 @@
   margin-left: 50rpx;
 }
 
-.modify_replace{
+.modify_replace {
   width: 80rpx;
 }
 
+.order-title {
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+}
+
+.order-title text {
+  padding-left: 10px;
+  border-left: 3px solid #f00;
+  font-size: 34rpx;
+}
+
 .cart-box {
-  padding: 40rpx;
+  padding: 20rpx 40rpx;
   display: flex;
   border-bottom: 2rpx solid #eee;
   justify-content: space-between;
   align-items: center;
+}
+
+.cart-box:last-child {
+  border-bottom: 1px solid #ccc;
 }
 
 .cart-good-picture {
@@ -74,6 +96,32 @@
 .cart-block {
   width: 100%;
   height: 100rpx;
+}
+
+.shipping-box, .payment-box {
+  height: 100rpx;
+  overflow: hidden;
+}
+
+.order-btn {
+  display: block;
+  float: left;
+  width: 100rpx;
+  height: 50rpx;
+  margin: 20rpx;
+  text-align: center;
+  line-height: 50rpx;
+  border: 1px solid #ccc;
+  background: #eee;
+}
+
+.msg-box textarea {
+  width: 710rpx;
+  height: 250rpx;
+  margin: 20rpx;
+  padding: 20rpx;
+  border: 1px solid #eee;
+  box-sizing: border-box;
 }
 
 .settlement {

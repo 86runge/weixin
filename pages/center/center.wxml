@@ -2,44 +2,49 @@
 
 <view class='container'>
 
+  <view class='user-account'>
+    <view class='user-img'>
+      <image src='{{avatar}}'></image>
+    </view>
+    <view class='user-name'>
+      <text>{{nick}}</text>
+      <text>普通用户</text>
+    </view>
+    <view></view>
+  </view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <view></view>
   <view class='info-box'>
-    <image src="{{userInfoAvatar}}" />
-  </view>
-
-  <view class='my-order'>
-    <view class='order-title'>
-      <view>我的订单</view>
-      <navigator url='../myorder/myorder'>
-        <view>查看全部订单</view>
-      </navigator>
+    <view class='info-img'>
+      <image wx:if="{{isLogin}}" src='http://a3.att.hudong.com/25/88/01300543064509142398886939232_s.jpg'></image>
+      <image wx:if="{{!isLogin}}" src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1033329440,3258066026&fm=27&gp=0.jpg'></image>
     </view>
-    <view class='order-box'>
-      <navigator url='../myorder/myorder'>
-        <view class='icon icon-topay'></view>
-        <view>待付款</view>
-      </navigator>
-      <navigator url='../myorder/myorder'>
-        <view class='icon icon-gift'></view>
-        <view>待发货</view>
-      </navigator>
-      <navigator url='../myorder/myorder'>
-        <view class='icon icon-send'></view>
-        <view>待收货</view>
-      </navigator>
-      <navigator url='../myorder/myorder'>
-        <view class='icon icon-sign'></view>
-        <view>已完成</view>
-      </navigator>
+    <view class='info-operate'>
+      <view wx:if="{{isLogin}}">注销账户</view>
+      <block wx:if="{{!isLogin}}">
+        <button bindtap='Login'>登录</button>
+        <button bindtap='Register'>注册</button>
+      </block>
     </view>
   </view>
-
-  <view class='cart-box'>
-    <navigator url='../cart/cart' open-type="switchTab">
-      <view>购物车</view>
-    </navigator>
-    <navigator url='../cart/cart' open-type="switchTab">
-      <view class='cart-num'>2</view>
-    </navigator>
-  </view>
-
+  <view class='static-box'></view>
 </view>

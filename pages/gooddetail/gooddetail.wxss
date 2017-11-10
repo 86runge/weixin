@@ -1,5 +1,9 @@
 /* pages/gooddetail/gooddetail.wxss */
 
+.container {
+  background: #fff;
+}
+
 .swiper-box {
   width: 100%;
   height: 400rpx;
@@ -121,7 +125,7 @@
   font-size: 30rpx;
 }
 
-.api-dialog__container{
+.api-dialog__container {
   height: 630rpx;
 }
 
@@ -179,13 +183,13 @@
   font-size: 30rpx;
 }
 
-.sub-weight{
+.sub-weight {
   padding: 20rpx;
   border-top: 2rpx solid #ccc;
   border-bottom: 2rpx solid #ccc;
 }
 
-.weight-title{
+.weight-title {
   font-size: 30rpx;
 }
 
@@ -199,23 +203,59 @@
   margin: 10rpx;
   border: 2rpx solid #ccc;
   border-radius: 10rpx;
+  box-sizing: border-box;
 }
 
-.sub-num{
+.weight-item .active {
+  background: #f00;
+  color: #fff;
+  border: 2rpx solid #f00;
+}
+
+.sub-num {
   display: flex;
   justify-content: space-between;
   margin: 20rpx 40rpx;
 }
 
-.buy-num{
+.buy-num {
   font-size: 30rpx;
 }
 
-.surplus-num{
+.surplus-num {
   color: #999;
-  margin-top: 20rpx;
 }
 
-.quantity-box{
-  margin-top: 20rpx;
+.quantity-box {
+  width: 100px;
+  height: 32px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 10rpx;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quantity-box view:first-child {
+  width: 30px;
+  height: 32px;
+  border-right: 1px solid #999;
+}
+
+.quantity-box input:nth-child(2) {
+  width: 40px;
+  height: 32px;
+}
+
+.quantity-box view:last-child {
+  width: 30px;
+  height: 32px;
+  border-left: 1px solid #999;
+}
+
+.quantity-box .dis_btn {
+  background: #ddd;
 }

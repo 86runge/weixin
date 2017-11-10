@@ -2,11 +2,44 @@
 
 <view class="container">
 
-  <view class='container-top'>
-    <view class="search-box">
-      <icon type="search" class='icon-search' size="" color="#fff" />
-      <input type='text' class="search-ipt" placeholder-class="phcolor" placeholder='搜索'></input>
-      <view class='line-white'></view>
+  <view class="page__bd">
+    <view class="weui-search-bar">
+      <view class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+          <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+          <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+          <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+            <icon type="clear" size="14"></icon>
+          </view>
+        </view>
+        <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+          <icon class="weui-icon-search" type="search" size="14"></icon>
+          <view class="weui-search-bar__text">搜索</view>
+        </label>
+      </view>
+      <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+    </view>
+    <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>苹果</view>
+        </view>
+      </navigator>
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>梨子</view>
+        </view>
+      </navigator>
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>西红柿</view>
+        </view>
+      </navigator>
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>黄瓜</view>
+        </view>
+      </navigator>
     </view>
   </view>
 
@@ -22,92 +55,145 @@
 
   <view class='saller-link'>
     <view class='saller-box'>
-      <block wx:for="{{saller_array}}" wx:key="*this">
-        <navigator url='{{item.url}}'>
-          <image src='{{item.img_src}}'></image>
-          {{item.name_cn}}
-        </navigator>
-      </block>
+      <navigator class='saller-item' url='../gooddetail/gooddetail?title=mihoutao'>
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1510221654568&di=d7ae0c61ca10a1046da7b786b60b72e7&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2014-12-17%2F131033115.jpg'></image>
+        <text>进口水果</text>
+      </navigator>
+      <navigator class='saller-item' url='../gooddetail/gooddetail?title=mihoutao'>
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1510221654568&di=d7ae0c61ca10a1046da7b786b60b72e7&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2014-12-17%2F131033115.jpg'></image>
+        <text>海南水果</text>
+      </navigator>
+      <navigator class='saller-item' url='../gooddetail/gooddetail?title=mihoutao'>
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1510221654568&di=d7ae0c61ca10a1046da7b786b60b72e7&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2014-12-17%2F131033115.jpg'></image>
+        <text>生鲜水果</text>
+      </navigator>
+      <navigator class='saller-item' url='../gooddetail/gooddetail?title=mihoutao'>
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1510221654568&di=d7ae0c61ca10a1046da7b786b60b72e7&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2014-12-17%2F131033115.jpg'></image>
+        <text>有机水果</text>
+      </navigator>
     </view>
     <view class='saller-box'>
-      <block wx:for="{{saller_array}}" wx:key="*this">
-        <navigator url='{{item.url}}'>
-          <image src='{{item.img_src}}'></image>
-          {{item.name_cn}}
-        </navigator>
-      </block>
-    </view>
-  </view>
-
-  <view class='head-new'>
-    <view class='new-img'>
-      <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505196384615&di=f3d53cab94a146889bd0b791727b88a1&imgtype=0&src=http%3A%2F%2F0.pic.pc6.com%2Fthumb%2Fup%2F2016-4%2F2016421155342_160_160.jpg'></image>
-    </view>
-    <view class='new-text'>
-      <swiper class='new-text-one' autoplay='true' circular='true' vertical='true'>
-        <swiper-item wx:for="{{hot_array}}" wx:key="*this">
-          <navigator class='new-item' url='../saller/saller?title=热文'>{{item.title}}</navigator>
-          <navigator class='new-title' url='../saller/saller?title={{item.sub_title}}'>
-            <text>{{item.content}}</text>
-          </navigator>
-        </swiper-item>
-      </swiper>
-      <swiper class='new-text-two' autoplay='true' circular='true' vertical='true'>
-        <swiper-item wx:for="{{watch_array}}" wx:key="*this">
-          <navigator class='new-item' url='../saller/saller?title=热文'>{{item.title}}</navigator>
-          <navigator class='new-title' url='../saller/saller?title={{item.sub_title}}'>
-            <text>{{item.content}}</text>
-          </navigator>
-        </swiper-item>
-      </swiper>
+      <navigator class='saller-item' url='../gooddetail/gooddetail?title=mihoutao'>
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1510221654568&di=d7ae0c61ca10a1046da7b786b60b72e7&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2014-12-17%2F131033115.jpg'></image>
+        <text>本地水果</text>
+      </navigator>
+      <navigator class='saller-item' url='../gooddetail/gooddetail?title=mihoutao'>
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1510221654568&di=d7ae0c61ca10a1046da7b786b60b72e7&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2014-12-17%2F131033115.jpg'></image>
+        <text>其他水果</text>
+      </navigator>
+      <navigator class='saller-item' url='../gooddetail/gooddetail?title=mihoutao'>
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1510221654568&di=d7ae0c61ca10a1046da7b786b60b72e7&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2014-12-17%2F131033115.jpg'></image>
+        <text>行业新闻</text>
+      </navigator>
+      <navigator class='saller-item' url='../gooddetail/gooddetail?title=mihoutao'>
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1510221654568&di=d7ae0c61ca10a1046da7b786b60b72e7&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2014-12-17%2F131033115.jpg'></image>
+        <text>联系我们</text>
+      </navigator>
     </view>
   </view>
 
   <view class='good-classfly'>
     <view class='selected-goods'>
-      <view class='good-title'>类目1</view>
+      <view class='good-title'>
+        <text>进口水果</text>
+        <navigator class='more_thing' url='../gooddetail/gooddetail?title=mihoutao'>更多</navigator>
+      </view>
       <view class='good-box'>
-        <view class='good-detail' wx:for="{{good_array_01}}" wx:key="*this">
+        <view class='good-detail' wx:for="{{good_array}}" wx:key="*this">
           <navigator url='{{item.url}}'>
-            <image src='{{item.img_src}}'></image>
-            <view class='unit-price'>{{item.price}}</view>
+            <view class='good-img'>
+              <image src='{{item.img_src}}'></image>
+            </view>
+            <view class='good-info'>
+              <view class='good-des'>{{item.descript}}</view>
+              <text>{{item.price}}</text>
+              <text>16人付款</text>
+            </view>
           </navigator>
         </view>
       </view>
     </view>
     <view class='fashion-goods'>
-      <view class='good-title'>类目2</view>
+      <view class='good-title'>
+        <text>海南水果</text>
+        <navigator class='more_thing' url='../gooddetail/gooddetail?title=mihoutao'>更多</navigator>
+      </view>
       <view class='good-box'>
-        <view class='good-detail' wx:for="{{good_array_01}}" wx:key="*this">
+        <view class='good-detail' wx:for="{{good_array}}" wx:key="*this">
           <navigator url='{{item.url}}'>
-            <image src='{{item.img_src}}'></image>
-            <view class='unit-price'>{{item.price}}</view>
+            <view class='good-img'>
+              <image src='{{item.img_src}}'></image>
+            </view>
+            <view class='good-info'>
+              <view class='good-des'>{{item.descript}}</view>
+              <text>{{item.price}}</text>
+              <text>16人付款</text>
+            </view>
           </navigator>
         </view>
       </view>
     </view>
     <view class='global-goods'>
-      <view class='good-title'>类目3</view>
+      <view class='good-title'>
+        <text>生鲜水果</text>
+        <navigator class='more_thing' url='../gooddetail/gooddetail?title=mihoutao'>更多</navigator>
+      </view>
       <view class='good-box'>
-        <view class='good-detail' wx:for="{{good_array_01}}" wx:key="*this">
+        <view class='good-detail' wx:for="{{good_array}}" wx:key="*this">
           <navigator url='{{item.url}}'>
-            <image src='{{item.img_src}}'></image>
-            <view class='unit-price'>{{item.price}}</view>
+            <view class='good-img'>
+              <image src='{{item.img_src}}'></image>
+            </view>
+            <view class='good-info'>
+              <view class='good-des'>{{item.descript}}</view>
+              <text>{{item.price}}</text>
+              <text>16人付款</text>
+            </view>
           </navigator>
         </view>
       </view>
     </view>
     <view class='trend-goods'>
-      <view class='good-title'>类目4</view>
+      <view class='good-title'>
+        <text>有机水果</text>
+        <navigator class='more_thing' url='../gooddetail/gooddetail?title=mihoutao'>更多</navigator>
+      </view>
       <view class='good-box'>
-        <view class='good-detail' wx:for="{{good_array_01}}" wx:key="*this">
+        <view class='good-detail' wx:for="{{good_array}}" wx:key="*this">
           <navigator url='{{item.url}}'>
-            <image src='{{item.img_src}}'></image>
-            <view class='unit-price'>{{item.price}}</view>
+            <view class='good-img'>
+              <image src='{{item.img_src}}'></image>
+            </view>
+            <view class='good-info'>
+              <view class='good-des'>{{item.descript}}</view>
+              <text>{{item.price}}</text>
+              <text>16人付款</text>
+            </view>
           </navigator>
         </view>
       </view>
     </view>
-  </view>
 
+    <view class='trend-goods'>
+      <view class='good-title'>
+        <text>水果常识</text>
+        <navigator class='more_thing' url='../gooddetail/gooddetail?title=mihoutao'>更多</navigator>
+      </view>
+      <view class='good-box'>
+        <view class='good-detail' wx:for="{{good_array}}" wx:key="*this">
+          <navigator url='{{item.url}}'>
+            <view class='good-img'>
+              <image src='{{item.img_src}}'></image>
+            </view>
+            <view class='good-info'>
+              <view class='good-des'>{{item.descript}}</view>
+              <text>{{item.price}}</text>
+              <text>16人付款</text>
+            </view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+
+  </view>
 </view>

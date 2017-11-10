@@ -1,5 +1,5 @@
 // pages/cart/cart.js
-//获取应用实例
+
 const app = getApp()
 
 Page(Object.assign({}, {
@@ -131,7 +131,7 @@ Page(Object.assign({}, {
     this.getTotalPrice();
   },
   // 编辑
-  editDelete(e){
+  editDelete(e) {
     var edit = this.data.editDelete;
     this.setData({
       editDelete: !edit,
@@ -154,6 +154,28 @@ Page(Object.assign({}, {
     } else {
       this.getTotalPrice();
     }
+  },
+
+  handlePaiQuantityChange(e) {
+    var componentId = e.componentId;
+    var quantity = e.quantity;
+
+    this.setData({
+      [`${componentId}.quantity`]: quantity
+    });
+  },
+  checked_all() {
+    this.setData({
+      check_item: !this.data.check_item,
+      check_all: !this.data.check_all
+    })
+  },
+  checked_item(e) {
+    var data = {};
+    console.log(e.currentTarget);
+    this.setData({
+
+    })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -203,25 +225,4 @@ Page(Object.assign({}, {
   onShareAppMessage: function () {
 
   },
-  handlePaiQuantityChange(e) {
-    var componentId = e.componentId;
-    var quantity = e.quantity;
-
-    this.setData({
-      [`${componentId}.quantity`]: quantity
-    });
-  },
-  checked_all() {
-    this.setData({
-      check_item: !this.data.check_item,
-      check_all: !this.data.check_all
-    })
-  },
-  checked_item(e) {
-    var data = {};
-    console.log(e.currentTarget);
-    this.setData({
-
-    })
-  }
 }))

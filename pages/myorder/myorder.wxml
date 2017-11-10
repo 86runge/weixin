@@ -1,2 +1,18 @@
 <!--pages/myorder/myorder.wxml-->
-<text>pages/myorder/myorder.wxml</text>
+
+<view class="container">
+  <view class='tab-bar' bindtap="tabFun">
+    <view class="{{tabArr.topIndex=='0'? 'active' : ''}}" data-index="0">全部订单</view>
+    <view class="{{tabArr.topIndex=='1'? 'active' : ''}}" data-index="1">待付款</view>
+    <view class="{{tabArr.topIndex=='2'? 'active' : ''}}" data-index="2">待发货</view>
+    <view class="{{tabArr.topIndex=='3'? 'active' : ''}}" data-index="3">待收货</view>
+    <view class="{{tabArr.topIndex=='4'? 'active' : ''}}" data-index="4">已完成</view>
+  </view>
+  <view class='order-box'>
+    <view class="{{tabArr.boxIndex=='0'? 'show-item' : ''}}">tab-bd01</view>  
+    <view class="{{tabArr.boxIndex=='1'? 'show-item' : ''}}">tab-bd02</view>  
+    <view class="{{tabArr.boxIndex=='2'? 'show-item' : ''}}">tab-bd03</view>  
+    <view class="{{tabArr.boxIndex=='3'? 'show-item' : ''}}">tab-bd04</view>
+    <view class="{{tabArr.boxIndex=='4'? 'show-item' : ''}}">tab-bd04</view>   
+  </view>
+</view>

@@ -57,25 +57,20 @@ Page(Object.assign({}, Pai.Toast, {
       return false;
     }
     wx.setStorage({
-      key: 'people_name',
-      data: objData.people_name
+      key: 'address',
+      data: {
+        'people_name': objData.people_name,
+        'people_phone': objData.people_phone,
+        'people_region': objData.people_region,
+        'people_address': objData.people_address,
+        'people_code': objData.people_code
+      }
     });
-    wx.setStorage({
-      key: 'people_phone',
-      data: objData.people_phone
-    });
-    wx.setStorage({
-      key: 'people_region',
-      data: objData.people_region
-    });
-    wx.setStorage({
-      key: 'people_address',
-      data: objData.people_address
-    });
-    wx.setStorage({
-      key: 'people_code',
-      data: objData.people_code
-    });
+    wx.showToast({
+      title: '保存成功',
+      icon: 'success',
+      duration: 2000
+    })
   },
 
   /**

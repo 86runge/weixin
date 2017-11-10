@@ -1,0 +1,62 @@
+/* pages/item_class/item_class.wxss */
+
+.good-box {
+  padding-bottom: 40rpx;
+  background: #fff;
+}
+
+.good-box::after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.good-box .good-detail {
+  float: left;
+  width: 345rpx;
+  margin: 40rpx 20rpx 0 0;
+  border: 2rpx solid #ddd;
+  box-sizing: border-box;
+}
+
+.good-box .good-detail:nth-child(odd) {
+  margin-left: 20rpx;
+}
+
+.good-detail .unit-price {
+  position: absolute;
+  left: 110rpx;
+  top: 160rpx;
+  width: 100rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  background: #999;
+  color: #fff;
+  z-index: 10;
+}
+
+.good-detail image {
+  display: block;
+  width: 340rpx;
+  height: 340rpx;
+}
+
+.good-info {
+  margin-top: 20rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+.good-des {
+  margin-bottom: 20rpx;
+}
+
+.good-info text:nth-of-type(1) {
+  color: #ff0036;
+}
+
+.good-info text:last-child {
+  float: right;
+  color: #999;
+}

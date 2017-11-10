@@ -12,7 +12,7 @@
     </view>
   </view>
 
-  <!-- 购物车没有东西 -->
+  <!-- 购物车有东西 -->
   <view class='cart-existence' hidden="{{!hasList}}">
     <view class='cart-box cart-head'>
       <view class='cart-good-selected'>
@@ -67,7 +67,7 @@
           <view class='sub-info'>不含运费</view>
         </view>
         <navigator url='../balance/balance'>
-          <view class='settlement-btn'>提交</view>
+          <view class='settlement-btn'>去结算</view>
         </navigator>
       </view>
     </view>

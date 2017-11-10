@@ -1,0 +1,35 @@
+/* pages/center/login.wxss */
+
+#login_form {
+  display: block;
+  width: 100%;
+  padding: 50rpx 0;
+  background: #e7e3d3;
+}
+
+#login_form .form-group {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20rpx 50rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+}
+
+.form-label {
+  flex: 1;
+  text-align: right;
+  margin-right: 40rpx;
+}
+
+.form-control {
+  flex: 2;
+}
+
+.code-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-box button {
+  font-size: 24rpx;
+}

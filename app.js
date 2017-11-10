@@ -1,5 +1,8 @@
 //app.js
 App({
+  data: {
+    url: 'https://a98920eb.ngrok.io'
+  },
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []

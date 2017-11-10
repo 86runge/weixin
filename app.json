@@ -1,13 +1,16 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/item/item",
-    "pages/discover/discover",
-    "pages/cart/cart",
     "pages/center/center",
+    "pages/index/index",
+    "pages/gooddetail/gooddetail",
+    "pages/item/item",
+    "pages/item_class/item_class",
+    "pages/cart/cart",
+    
+    "pages/center/login",
+    "pages/center/register",
     "pages/logs/logs",
     "pages/saller/saller",
-    "pages/gooddetail/gooddetail",
     "pages/balance/balance",
     "pages/myorder/myorder",
     "pages/address/address",
@@ -16,7 +19,7 @@
   "window": {
     "navigationBarBackgroundColor": "#cf4218",
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "微信小程序",
+    "navigationBarTitleText": "都市果园",
     "backgroundTextStyle": "light",
     "backgroundColor": "#dddddd"
   },
@@ -30,26 +33,26 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "images/icon_index.png",
-        "selectedIconPath": "images/icon_index_active.png"
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_active.png"
       },
       {
         "pagePath": "pages/item/item",
-        "text": "测试页面",
-        "iconPath": "images/icon_cart.png",
-        "selectedIconPath": "images/icon_cart_active.png"
+        "text": "分类",
+        "iconPath": "images/class.png",
+        "selectedIconPath": "images/class_active.png"
       },
       {
         "pagePath": "pages/cart/cart",
         "text": "购物车",
-        "iconPath": "images/icon_cart.png",
-        "selectedIconPath": "images/icon_cart_active.png"
+        "iconPath": "images/cart.png",
+        "selectedIconPath": "images/cart_active.png"
       },
       {
         "pagePath": "pages/center/center",
         "text": "我的",
-        "iconPath": "images/icon_center.png",
-        "selectedIconPath": "images/icon_center_active.png"
+        "iconPath": "images/center.png",
+        "selectedIconPath": "images/center_active.png"
       }
     ]
   },

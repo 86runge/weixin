@@ -1,10 +1,5 @@
 <!--pages/gooddetail/gooddetail.wxml-->
 
-<import src="/dist/toast/toast.wxml" />
-<import src="/dist/quantity/quantity.wxml" />
-
-<template is="pai-toast" data="{{ paiToast }}"></template>
-
 <view class="container">
 
   <swiper class='swiper-box' indicator-dots='true' autoplay='true' circular='true'>
@@ -86,21 +81,23 @@
         </view>
         <view class='sub-detail'>
           <view class='sub-text'>【猕猴桃 夏季尝鲜】东南亚猕猴桃，味道鲜美，吃的人都说好</view>
-          <view class='sub-price'>￥15.20 - ￥58.60</view>
+          <view class='sub-price'>￥{{sub_price}}</view>
         </view>
         <view class='dialog-close' bindtap="closeDialog">关闭</view>
       </view>
       <view class='sub-weight'>
         <view class='weight-title'>净含量：</view>
         <view class='weight-item'>
-          <view>苹果 520g</view>
-          <view>葡萄 320g</view>
-          <view>哈密瓜 1350g</view>
-          <view>蓝莓 152g</view>
-          <view>苹果 520g</view>
-          <view>葡萄 320g</view>
-          <view>哈密瓜 1350g</view>
-          <view>蓝莓 152g</view>
+          <!-- <block wx:for="{{spec_list}}" wx:key="*this">
+            <view class="{{tabArr.topIndex=='{{index}}'? 'active' : ''}}" data-index="{{index}}" bindtap='tabFun'>{{item.spec}}</view>
+          </block> -->
+          <view class="{{tabArr.topIndex=='0'? 'active' : ''}}" data-index="0" bindtap='tabFun'>葡萄 250g</view>
+          <view class="{{tabArr.topIndex=='1'? 'active' : ''}}" data-index="1" bindtap='tabFun'>葡萄 250g</view>
+          <view class="{{tabArr.topIndex=='2'? 'active' : ''}}" data-index="2" bindtap='tabFun'>葡萄 250g</view>
+          <view class="{{tabArr.topIndex=='3'? 'active' : ''}}" data-index="3" bindtap='tabFun'>葡萄 250g</view>
+          <view class="{{tabArr.topIndex=='4'? 'active' : ''}}" data-index="4" bindtap='tabFun'>葡萄 250g</view>
+          <view class="{{tabArr.topIndex=='5'? 'active' : ''}}" data-index="5" bindtap='tabFun'>葡萄 250g</view>
+          <view class="{{tabArr.topIndex=='6'? 'active' : ''}}" data-index="6" bindtap='tabFun'>葡萄 250g</view>
         </view>
       </view>
       <view class='sub-num'>
@@ -109,7 +106,9 @@
           <view class='surplus-num'>剩余999件</view>
         </view>
         <view class='quantity-box'>
-          <template is="pai-quantity" data="{{ ...quantity, componentId: 'quantity', size: 'small' }}" />
+          <view data-num="{{good_num}}" bindtap='reduceNo-' class='{{dis_btn}}'>-</view>
+          <input value='{{good_num}}'></input>
+          <view data-num="{{good_num}}" bindtap='addNo-'>+</view>
         </view>
       </view>
       <view class='add-cart-btn' bindtap="addCart">确定</view>

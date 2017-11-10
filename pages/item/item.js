@@ -1,23 +1,20 @@
+
+var app = getApp();
+
 Page({
   data: {
-    icons: [
-      'album',
-      'arrow',
-      'camera',
-      'certificate',
-      'check',
-      'checked',
-      'close',
-      'gift',
-      'home',
-      'location',
-      'message',
-      'send',
-      'shopping-cart',
-      'sign',
-      'store',
-      'topay',
-      'tosend'
-    ]
-  }
-});
+    showTopTips: false,
+    errorMsg: ""
+  },
+  onLoad: function () {
+    var that = this;
+    wx.getSystemInfo({
+      success: function (res) {
+        that.setData({
+          windowHeight: res.windowHeight,
+          windowWidth: res.windowWidth
+        })
+      }
+    });
+  },
+})  

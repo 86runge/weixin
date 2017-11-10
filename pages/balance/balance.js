@@ -16,41 +16,17 @@ Page({
     var has_address = this.data.has_address;
     //获取本地数据
     wx.getStorage({
-      key: 'people_name',
+      key: 'address',
       success: function (res) {
-        that.setData({ people_name: res.data});
         that.setData({
           has_address: !has_address
-        })
-        console.log(res.data, has_address);
-      }
-    });
-    wx.getStorage({
-      key: 'people_phone',
-      success: function (res) {
-        console.log(res.data);
-        that.setData({ people_phone: res.data });
-      }
-    });
-    wx.getStorage({
-      key: 'people_region',
-      success: function (res) {
-        console.log(res.data);
-        that.setData({ people_region: res.data });
-      }
-    });
-    wx.getStorage({
-      key: 'people_address',
-      success: function (res) {
-        console.log(res.data);
-        that.setData({ people_address: res.data });
-      }
-    });
-    wx.getStorage({
-      key: 'people_code',
-      success: function (res) {
-        console.log(res.data);
-        that.setData({ people_code: res.data });
+        });
+        that.setData({
+          people_name: res.data.people_name,
+          people_phone: res.data.people_phone,
+          people_region: res.data.people_region,
+          people_address: res.data.people_address,
+        });
       }
     });
   },

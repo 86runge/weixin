@@ -1,5 +1,9 @@
 /* pages/cart/cart.wxss */
 
+.container {
+  background: #fff;
+}
+
 .cart-empty .hungry {
   margin-top: 100rpx;
   font-size: 30rpx;
@@ -127,6 +131,7 @@ checkbox .wx-checkbox-input {
 
 .cart-good-price text {
   line-height: 40rpx;
+  color: #ff0036;
 }
 
 .cart-block {

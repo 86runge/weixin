@@ -14,6 +14,9 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+const apiUrl = 'https://a98920eb.ngrok.io'
+
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  apiUrl: apiUrl
 }

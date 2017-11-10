@@ -1,0 +1,31 @@
+<!--pages/center/register.wxml-->
+
+<view class='container'>
+
+  <form id='register_form' bindsubmit='registerSubmit' bindreset='registerRest'>
+    <view class='form-group'>
+      <text class='form-label'>用户名:</text>
+      <input type='text' name="name" class='form-control' placeholder='请输入用户名'></input>
+    </view>
+    <view class='form-group'>
+      <text class='form-label'>密码:</text>
+      <input type='text' name="password" class='form-control' placeholder='请输入密码' password='true'></input>
+    </view>
+    <view class='form-group'>
+      <text class='form-label'>确认密码:</text>
+      <input type='text' name="sub_pwd" class='form-control' placeholder='请再次输入密码' password='true'></input>
+    </view>
+    <view class='form-group'>
+      <text class='form-label'>验证码:</text>
+      <view class='code-box form-control'>
+        <input type='number' name="test_code" placeholder='请输入验证码'></input>
+        <text bindtap='getCode'>获取验证码</text>
+      </view>
+    </view>
+    <view class='form-group submit-box'>
+      <button size='mini' type='warm' form-type='reset'>重置</button>
+      <button size='mini' type='primary' form-type='submit'>注册</button>
+    </view>
+  </form>
+
+</view>

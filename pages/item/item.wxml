@@ -1,17 +1,38 @@
 <view class="container">
-
-  <view class="doc-title">ICON</view>
-
-  <view class="panel">
-    <view wx:for="{{ icons }}" wx:for-item="icon" class="icon-wrap">
-      <view class="icon icon-{{ icon }}"  style="font-size: 20px; color: #ff4343;"></view>
-      <view class="icon-classname">icon-{{ icon }}</view>
+  <navigator url='../item_class/item_class'>
+    <view class='class-item'>
+      <text>进口水果</text>
+      <text>搜索</text>
     </view>
-  </view>
-  <view class="panel" style="margin-bottom: 40px;">
-    <view wx:for="{{ icons }}" wx:for-item="icon" class="icon-wrap">
-      <view class="icon icon-{{ icon }}" style="font-size: 40px;"></view>
-      <view class="icon-classname">icon-{{ icon }}</view>
+  </navigator>
+  <navigator url='../item_class/item_class'>
+    <view class='class-item'>
+      <text>海南水果</text>
+      <text>搜索</text>
     </view>
-  </view>
+  </navigator>
+  <navigator url='../item_class/item_class'>
+    <view class='class-item'>
+      <text>生鲜水果</text>
+      <text>搜索</text>
+    </view>
+  </navigator>
+  <navigator url='../item_class/item_class'>
+    <view class='class-item'>
+      <text>有机水果</text>
+      <text>搜索</text>
+    </view>
+  </navigator>
+  <navigator url='../item_class/item_class'>
+    <view class='class-item'>
+      <text>本地水果</text>
+      <text>搜索</text>
+    </view>
+  </navigator>
+  <navigator url='../item_class/item_class'>
+    <view class='class-item'>
+      <text>其他水果</text>
+      <text>搜索</text>
+    </view>
+  </navigator>
 </view>
