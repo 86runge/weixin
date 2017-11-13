@@ -96,7 +96,7 @@
     <view class='selected-goods'>
       <view class='good-title'>
         <text>进口水果</text>
-        <navigator class='more_thing' url='../gooddetail/gooddetail?title=mihoutao'>更多</navigator>
+        <navigator class='more_thing' url='../item_class/item_class'>更多</navigator>
       </view>
       <view class='good-box'>
         <view class='good-detail' wx:for="{{good_array}}" wx:key="*this">
@@ -116,7 +116,7 @@
     <view class='fashion-goods'>
       <view class='good-title'>
         <text>海南水果</text>
-        <navigator class='more_thing' url='../gooddetail/gooddetail?title=mihoutao'>更多</navigator>
+        <navigator class='more_thing' url='../item_class/item_class'>更多</navigator>
       </view>
       <view class='good-box'>
         <view class='good-detail' wx:for="{{good_array}}" wx:key="*this">
@@ -136,7 +136,7 @@
     <view class='global-goods'>
       <view class='good-title'>
         <text>生鲜水果</text>
-        <navigator class='more_thing' url='../gooddetail/gooddetail?title=mihoutao'>更多</navigator>
+        <navigator class='more_thing' url='../item_class/item_class'>更多</navigator>
       </view>
       <view class='good-box'>
         <view class='good-detail' wx:for="{{good_array}}" wx:key="*this">
@@ -156,7 +156,7 @@
     <view class='trend-goods'>
       <view class='good-title'>
         <text>有机水果</text>
-        <navigator class='more_thing' url='../gooddetail/gooddetail?title=mihoutao'>更多</navigator>
+        <navigator class='more_thing' url='../item_class/item_class'>更多</navigator>
       </view>
       <view class='good-box'>
         <view class='good-detail' wx:for="{{good_array}}" wx:key="*this">
@@ -177,7 +177,7 @@
     <view class='trend-goods'>
       <view class='good-title'>
         <text>水果常识</text>
-        <navigator class='more_thing' url='../gooddetail/gooddetail?title=mihoutao'>更多</navigator>
+        <navigator class='more_thing' url='../item_class/item_class'>更多</navigator>
       </view>
       <view class='good-box'>
         <view class='good-detail' wx:for="{{good_array}}" wx:key="*this">

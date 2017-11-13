@@ -1,12 +1,12 @@
 {
   "pages": [
-    "pages/center/center",
+    
     "pages/index/index",
     "pages/gooddetail/gooddetail",
     "pages/item/item",
     "pages/item_class/item_class",
     "pages/cart/cart",
-    
+    "pages/center/center",
     "pages/center/login",
     "pages/center/register",
     "pages/logs/logs",

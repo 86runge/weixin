@@ -52,7 +52,8 @@ Page({
         descript: '新鲜的水果，来自新西兰，快来看一看，尝一尝',
         price: '￥24.50'
       }
-    ]
+    ],
+    good_data: []
   },
 
   /**
@@ -92,16 +93,18 @@ Page({
       },
       method: "GET",
       success: function (res) {
-        for (var i in res.data) {
-          if (res.data[i][1] == '苹果') {
-            var arr_01 = [];
-            var good_arr_01 = that.data.good_array_01;
-            arr_01.push(res.data[i]);
-          }
-        }
-        // this.setData({
-        //   test_code: res.data
-        // })
+        var good_data = that.data.good_data
+        // for (var i in res.data) {
+        //   if (res.data[i][1] == '苹果') {
+        //     var arr_01 = [];
+        //     var good_arr_01 = that.data.good_array_01;
+        //     arr_01.push(res.data[i]);
+        //   }
+        // }
+        that.setData({
+          good_data: res.data
+        })
+        console.log(good_data)
       }
     })
   },
